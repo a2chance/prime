@@ -1,0 +1,85 @@
+.map 
+	display: flex
+	flex-flow: wrap 
+	background: #000
+
+.map__unit 
+	width: 50%
+	&:nth-child(2)
+		padding: 50px 0px 50px 60px
+	@media (max-width: $md2)
+		width: 100%
+	@media (max-width: $md4)
+		&:nth-child(2)
+			padding: 20px
+
+.map__title 
+	color: #fff
+	font-family: Bebas
+	font-size: 25px
+	text-transform: uppercase
+	letter-spacing: 2.5px
+	margin: 0 0 25px 0
+
+.map__input
+	display: block 
+	width: 375px
+	height: 50px
+	border: 2px solid #959595
+	background: #252525
+	padding: 0 0 0 17px
+	color: #fff
+	&:focus
+		&::placeholder
+			opacity: 0
+	&:not(:last-child)
+		margin: 0 0 25px 0
+	&::placeholder
+		color: #959595
+		font-family: "PT Sans"
+		font-size: 15px
+	@media (max-width: $md4)
+		width: 250px
+
+.map__input-name
+	
+
+.map__input-email
+.map__input-text
+	padding: 12px 0 0 17px
+	height: 100px
+	resize: none
+	
+.map__input-btn
+	font-family: Bebas
+	display: inline-block 
+	padding: 15px 30px 15px
+	width: auto
+	text-transform: uppercase
+	letter-spacing: 1.5px
+	font-size: 17px
+	background: #fff 
+	color: #000 
+	border: 0
+	position: relative
+	span 
+		position: relative
+		z-index: 3
+	&:after
+		content: ''
+		display: inline-block
+		height: 100%
+		width: 0
+		position: absolute
+		top: 0
+		left: 0
+		background: purple
+		transition: all .4s linear
+	@media (min-width: 992.98px)
+		&:hover
+			color: #fff
+			&:after
+				right: 0
+				width: 100%
+				
+		

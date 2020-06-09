@@ -1,0 +1,122 @@
+//<MIXINS>============================================================
+
+//</MIXINS>===========================================================
+
+//<FONTS>=============================================================
+
+//<Подключаем шрифты>=================================================
+@import "_fonts"
+//</Подключаем шрифты>================================================
+
+//<Шрифт по умолчанию>================================================
+$ffm: PTSans
+$fsz: 15px
+//</Шрифт по умолчанию>===============================================
+
+//</FONTS>============================================================
+
+//<ICONS>=============================================================
+
+//</ICONS>============================================================
+
+//<VARIABLES>=========================================================
+$minWidth: 320px //iPhone 5, SE
+$mw: 869
+$md1: $mw+10px
+$md2: 992.98px
+$md3: 767.98px
+$md4: 479.98px //iPhone 7,8,9,SE-2
+//</VARIABLES>========================================================
+
+//<TEMPLATES>=========================================================
+
+//</TEMPLATES>========================================================
+
+//</ZERO-FILE>========================================================
+@import "_zero"
+//</ZERO-FILE>========================================================
+
+//<WRAPPER>===========================================================
+.wrapper
+	width: 100%
+	min-height: 100%
+	overflow: hidden
+//</WRAPPER>==========================================================
+
+//<GENERAL STRUCTURE>=================================================
+.container
+	max-width: $mw+px
+	margin: 0 auto 
+	width: 100%
+	@media (max-width: $md1)
+		max-width: 970px
+	@media (max-width: $md2)
+		max-width: 750px
+	@media (max-width: $md3)
+		max-width: none
+		padding: 0 10px
+//</GENERAL STRUCTURE>================================================
+
+//<GENERAL PROPERTY>==================================================
+.link 
+
+.btn-item 
+	display: inline-block
+	padding: 18px 33px 15px
+	font-family: Bebas
+	text-transform: uppercase
+	letter-spacing: 1.5px
+	color: #000
+	font-size: 17px
+	background: #fff
+	margin: 0 14px 29px 0
+	position: relative
+	span
+		position: relative
+		z-index: 2
+	&:after
+		content: ''
+		height: 100%
+		width: 0
+		background: pink
+		position: absolute
+		top: 0
+		left: 50%
+		transition: all .3s linear
+	@media (min-width: 992.98px)
+		&:hover
+			&:after
+				width: 100%
+				left: 0
+			
+		
+	
+
+.link-item
+	display: inline-block
+	font-family: Bebas
+	text-transform: uppercase
+	letter-spacing: 1.7px
+	font-size: 17px
+	color: #fff 
+	text-decoration: underline
+	@media (min-width: 992.98px)
+		transition: all .1s linear
+		&:hover
+			transform: scale(1.1)
+			text-decoration: underline
+//</GENERAL PROPERTY>=================================================
+
+//<IMPORT SASS-FILES>=================================================
+@import "_header"
+@import "_intro"
+@import "_footer"
+@import "_dish"
+@import "_why"
+@import "_advantage"
+@import "_contacts"
+@import "_map"
+//</IMPORT SASS-FILES>================================================
+
+
+

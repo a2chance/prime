@@ -1,0 +1,59 @@
+.advantage 
+	background: #ebebeb
+	padding: 54px 0 0 0
+
+.advantage__row 
+	display: flex
+	flex-wrap: wrap
+	margin: 0 -15px
+
+.advantage__col
+	flex: 0 0 50% 
+	min-height: 100px
+	display: flex
+	margin: 0 0 50px 0
+	padding: 0 15px
+	@media (max-width: $md3)
+		flex: 0 0 100%
+
+.advantage__img 
+	flex: 0 0 100px
+	height: 100%
+	background: #000
+	display: flex 
+	overflow: hidden
+	transition: all .2s linear
+	img 
+		margin: auto
+		max-width: 100%
+		transition: all .3s linear
+	@media (min-width: 992.98px)
+		&:hover
+			background: purple
+
+.advantage__img-item 
+
+.advantage__text 
+	margin: 0 0 0 12px
+	height: 100%
+	display: flex
+	flex-direction: column
+
+.advantage__title 
+	color: #000
+	font-size: 25px
+	text-transform: uppercase
+	letter-spacing: 2.5px
+	margin: 0 0 10px 0
+	font-family: Bebas
+	display: inline-block
+	min-height: 33px
+	@media (min-width: 992.98px)
+		&:hover
+			text-decoration: underline
+
+.advantage__par
+	color: #000
+	font-family: "PT Sans"
+	line-height: (25px/15px)
+	flex: 1 0 auto
